@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel de Sensores</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>☀️ Panel de Control de Sensores ❄️</h1>
+
+  <div id="sensor-panel">
+
+    <div class="sensor" id="temp-sensor">
+      <h2>🌡️Temperatura</h2>
+      <p class="value">-- °C</p>
+    </div>
+
+    <div class="sensor" id="humedad-sensor">
+      <h2>💧Humedad</h2>
+      <p class="value">-- %</p>
+    </div>
+
+    <div class="sensor" id="presion-sensor">
+      <h2>🌎Presión</h2>
+      <p class="value">-- hPa</p>
+    </div>
+    
+  </div>
+
+  <div id="alert-box" class="alert-box hidden   ">
+    ⚠️ ¡Alerta del sensor!
+    <span id="alert-message"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

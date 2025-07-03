@@ -1,0 +1,59 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: radial-gradient(circle, #00cee9ab, #c6f0eca8);
+    text-align: center;
+    padding: 20px;
+}
+  
+#sensor-panel {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+  
+.sensor {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 150px;
+    transition: transform 0.3s;
+}
+  
+.sensor:hover {
+    transform: scale(1.05);
+}
+  
+.sensor h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+  
+.sensor .value {
+    font-size: 2em;
+    font-weight: bold;
+}
+  
+.alert-box {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #ff4e4e;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    animation: peligro 0.3 ease;
+}
+  
+.hidden {
+    display: none;
+}
+
+@keyframes peligro {
+    0% {transform: scale(1);}
+    25%{transform: scale(1.5);}
+    50%{transform: scale(1);}
+    75%{transform: scale(0.95);}
+    100%{transform: scale(1);}
+}
