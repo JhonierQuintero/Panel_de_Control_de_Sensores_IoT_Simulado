@@ -7,33 +7,34 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="container">
+    <h1>☀️ Panel de Control de Sensores ❄️</h1>
 
-  <h1>☀️ Panel de Control de Sensores ❄️</h1>
+    <div id="sensor-panel">
 
-  <div id="sensor-panel">
+      <div class="sensor" id="temp-sensor">
+        <h2>🌡️Temperatura</h2>
+        <p class="value">-- °C</p>
+      </div>
 
-    <div class="sensor" id="temp-sensor">
-      <h2>🌡️Temperatura</h2>
-      <p class="value">-- °C</p>
-    </div>
+      <div class="sensor" id="humedad-sensor">
+        <h2>💧Humedad</h2>
+        <p class="value">-- %</p>
+      </div>
 
-    <div class="sensor" id="humedad-sensor">
-      <h2>💧Humedad</h2>
-      <p class="value">-- %</p>
-    </div>
-
-    <div class="sensor" id="presion-sensor">
-      <h2>🌎Presión</h2>
-      <p class="value">-- hPa</p>
-    </div>
+      <div class="sensor" id="presion-sensor">
+        <h2>🌎Presión</h2>
+        <p class="value">-- hPa</p>
+      </div>
     
-  </div>
+    </div>
 
-  <div id="alert-box" class="alert-box hidden   ">
-    ⚠️ ¡Alerta del sensor!
-    <span id="alert-message"></span>
+    <div id="alert-box" class="alert-box hidden   ">
+      ⚠️ ¡Alerta del sensor!
+      <span id="alert-message"></span>
+    </div>
   </div>
-
+  
   <script src="script.js"></script>
 </body>
 </html>

@@ -4,6 +4,17 @@ body {
     text-align: center;
     padding: 20px;
 }
+
+.container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container h1{
+    font-size: 3rem;
+    margin-top: 200px;
+}
   
 #sensor-panel {
     display: flex;
@@ -23,6 +34,7 @@ body {
   
 .sensor:hover {
     transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.733), rgba(0, 26, 255, 0.781);
 }
   
 .sensor h2 {
